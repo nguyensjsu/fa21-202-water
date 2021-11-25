@@ -9,6 +9,8 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 
 import gameobject.*;
+import objects.EnemiesManager;
+import objects.MainCharacter;
 import util.Resource;
 
 public class GameScreen extends JPanel implements Runnable, KeyListener, IGameScreenState {
@@ -17,7 +19,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	private GamePlayingState gamePlayingState;
 	private GameOverState gameOverState;
 	private IGameState state;
-	
+
 	private Land land;
 	private MainCharacter mainCharacter;
 	private EnemiesManager enemiesManager;
@@ -25,6 +27,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	private Thread thread;
 
 	private boolean isKeyPressed;
+	private int fps = 30;
 
 	private BufferedImage replayButtonImage;
 	private BufferedImage gameOverButtonImage;
@@ -72,6 +75,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	}
 
 	public void paintGameOverState(Graphics g) {
+		fps = 30;
 		clouds.draw(g);
 		land.draw(g);
 		enemiesManager.draw(g);
@@ -95,6 +99,11 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		mainCharacter.draw(g);
 	}
 
+	public long increaseFPS() {
+		this.fps += 1;
+		return 1000 * 1000000 / fps;
+	}
+
 	@Override
 	public void run() {
 
@@ -102,17 +111,20 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		long msPerFrame = 1000 * 1000000 / fps;
 		long lastTime = 0;
 		long elapsed;
-		
+
 		int msSleep;
 		int nanoSleep;
 
-		long endProcessGame;
-		long lag = 0;
+		int counter = 0;
 
 		while (true) {
 			gameUpdate();
 			repaint();
-			endProcessGame = System.nanoTime();
+			if (counter % 20 == 0) {
+				msPerFrame = increaseFPS();
+				counter = 0;
+			}
+			counter++;
 			elapsed = (lastTime + msPerFrame - System.nanoTime());
 			msSleep = (int) (elapsed / 1000000);
 			nanoSleep = (int) (elapsed % 1000000);
