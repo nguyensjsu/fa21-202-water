@@ -96,6 +96,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	}
 
 	public void paintStartGameState(Graphics g) {
+		objectFactory.getMainCharacter().playThemeSound();
 		mainCharacter.draw(g);
 	}
 
