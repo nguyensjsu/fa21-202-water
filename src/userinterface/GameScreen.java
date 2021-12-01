@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
-import gameobject.*;
+import objects.*;
 import objects.EnemiesManager;
 import objects.MainCharacter;
 import util.Resource;
@@ -20,11 +20,8 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	private GameOverState gameOverState;
 	private IGameState state;
 
-	private Land land;
-	private MainCharacter mainCharacter;
-	private EnemiesManager enemiesManager;
-	private Clouds clouds;
-	private Thread thread;
+	private final IObjectFactoryFactory factoryFactory;
+	private IObjectFactory objectFactory;
 
 	private boolean isKeyPressed;
 	private int fps = 30;
@@ -38,17 +35,15 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		gamePlayingState = new GamePlayingState(this);
 		this.setStateStartGameState();
 
-		mainCharacter = new MainCharacter();
-		land = new Land(GameWindow.SCREEN_WIDTH, mainCharacter);
-		mainCharacter.setSpeedX(4);
+		factoryFactory = new RandomFactoryFactory();
+		objectFactory = new ClassicObjectFactory();
+		objectFactory.getMainCharacter().setSpeedX(4);
 		replayButtonImage = Resource.getResouceImage("data/replay_button.png");
 		gameOverButtonImage = Resource.getResouceImage("data/gameover_text.png");
-		enemiesManager = new EnemiesManager(mainCharacter);
-		clouds = new Clouds(GameWindow.SCREEN_WIDTH, mainCharacter);
 	}
 
 	public void startGame() {
-		thread = new Thread(this);
+		Thread thread = new Thread(this);
 		thread.start();
 	}
 
@@ -57,14 +52,11 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	}
 
 	public void gamePlayingStateUpdate() {
-		clouds.update();
-		land.update();
-		mainCharacter.update();
-		enemiesManager.update();
-		if (enemiesManager.isCollision()) {
-			mainCharacter.playDeadSound();
+		objectFactory.getObjects().forEach(IObject::update);
+		if (objectFactory.getEnemyManager().isCollision()) {
+			objectFactory.getMainCharacter().playDeadSound();
 			state.nextState();
-			mainCharacter.dead(true);
+			objectFactory.getMainCharacter().dead(true);
 		}
 	}
 
@@ -76,28 +68,22 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 
 	public void paintGameOverState(Graphics g) {
 		fps = 30;
-		clouds.draw(g);
-		land.draw(g);
-		enemiesManager.draw(g);
-		mainCharacter.draw(g);
+		objectFactory.getObjects().forEach((object) -> object.draw(g));
 		g.setColor(Color.BLACK);
-		g.drawString("HI " + mainCharacter.score, 500, 20);
+		g.drawString("HI " + objectFactory.getMainCharacter().score, 500, 20);
 		g.drawImage(gameOverButtonImage, 200, 30, null);
 		g.drawImage(replayButtonImage, 283, 50, null);
 	}
 
 	public void paintGamePlayingState(Graphics g) {
-		clouds.draw(g);
-		land.draw(g);
-		enemiesManager.draw(g);
-		mainCharacter.draw(g);
+		objectFactory.getObjects().forEach((object) -> object.draw(g));
 		g.setColor(Color.BLACK);
-		g.drawString("HI " + mainCharacter.score, 500, 20);
+		g.drawString("HI " + objectFactory.getMainCharacter().score, 500, 20);
 	}
 
 	public void paintStartGameState(Graphics g) {
 		objectFactory.getMainCharacter().playThemeSound();
-		mainCharacter.draw(g);
+		objectFactory.getMainCharacter().draw(g);
 	}
 
 	public long increaseFPS() {
@@ -156,11 +142,11 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	}
 
 	public void keyGamePlayingStateJump() {
-		mainCharacter.jump();
+		objectFactory.getMainCharacter().jump();
 	}
 
 	public void keyGamePlayingStateDown() {
-		mainCharacter.down(true);
+		objectFactory.getMainCharacter().down(true);
 	}
 
 	public void keyStartGameState() {
@@ -182,9 +168,9 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	}
 
 	private void resetGame() {
-		enemiesManager.reset();
-		mainCharacter.dead(false);
-		mainCharacter.reset();
+		objectFactory.getEnemyManager().reset();
+		objectFactory.getMainCharacter().dead(false);
+		objectFactory.getMainCharacter().reset();
 	}
 
 	public void setStateGameOverState() {
