@@ -30,9 +30,10 @@ Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacle
 ![main-character6](https://user-images.githubusercontent.com/67829172/144568805-ec039e6e-25e9-4b81-adf0-ca724585e7af.png)
 
 ### [Project Dashboard](https://github.com/nguyensjsu/fa21-202-water/projects/1)
-Insert Image
+<img width="1137" alt="Screen Shot 2021-12-03 at 3 01 03 AM" src="https://user-images.githubusercontent.com/67829172/144592013-4862f052-5666-4fe9-90e0-0a7731eaba73.png">
 
-### [Burndown Map](Insert Url)
+
+### [Burndown Chart](Insert Url)
 Insert Image
 
 
