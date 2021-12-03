@@ -34,4 +34,4 @@ Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacle
 * Anujot - State Pattern, User Interface, Graphic Images Creation, Documentation, Demo Video, Agile Video
 * Adarsh - Singleton Pattern, Animation Logic, Background Sound, User Story Video
 * Rohit - Decorator Pattern, Graphic Images Creation, Util, Character Selection
-* Yash -  Abstract Factory Pattern, Diagrams, Connecting components
+* Yash -  Abstract Factory Pattern, Diagrams, Connecting components, Characters and Objects
