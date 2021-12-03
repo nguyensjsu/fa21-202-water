@@ -28,3 +28,10 @@ Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacle
 ![main-character1](https://user-images.githubusercontent.com/67829172/144568764-0f28c26a-79da-480f-b12a-80c1df91849e.png)
 &nbsp;
 ![main-character6](https://user-images.githubusercontent.com/67829172/144568805-ec039e6e-25e9-4b81-adf0-ca724585e7af.png)
+
+
+### Individual Contributions
+* Anujot - State Pattern, User Interface, Graphic Images Creation, Documentation, Demo Video, Agile Video
+* Adarsh - Singleton Pattern, Animation Logic, Background Sound, User Story Video
+* Rohit - Decorator Pattern, Graphic Images Creation, Util, Character Selection
+* Yash -  Abstract Factory Pattern, Diagrams, Connecting components
