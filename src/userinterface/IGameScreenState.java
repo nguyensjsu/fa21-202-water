@@ -25,4 +25,8 @@ public interface IGameScreenState {
     void keyStartGameState();
 
     void gamePlayingStateUpdate();
+
+    void paintCharacterSelectionState(Graphics g);
+
+    void keyCharacterSelectionState(int i);
 }

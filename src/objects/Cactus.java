@@ -14,11 +14,11 @@ public class Cactus extends Enemy {
 	private int height;
 	
 	private BufferedImage image;
-	private MainCharacter mainCharacter;
+	private CharacterDecorator mainCharacter;
 	
 	private Rectangle rectBound;
 	
-	public Cactus(MainCharacter mainCharacter, int posX, int width, int height, BufferedImage image) {
+	public Cactus(CharacterDecorator mainCharacter, int posX, int width, int height, BufferedImage image) {
 		this.posX = posX;
 		this.width = width;
 		this.height = height;

@@ -8,10 +8,13 @@ public interface IObjectFactory {
 
     IObject getLand();
 
-    MainCharacter getMainCharacter();
+    CharacterDecorator getCharacterDecorator();
 
     EnemiesManager getEnemyManager();
 
+    PowerUpsManager getPowerUpManager();
+
     List<IObject> getObjects();
 
+    void initialise(int character);
 }

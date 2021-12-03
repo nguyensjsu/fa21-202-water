@@ -13,9 +13,9 @@ public class Clouds implements IObject {
 	private List<ImageCloud> listCloud;
 	private BufferedImage cloud;
 	
-	private MainCharacter mainCharacter;
+	private CharacterDecorator mainCharacter;
 	
-	public Clouds(int width, MainCharacter mainCharacter) {
+	public Clouds(int width, CharacterDecorator mainCharacter) {
 		this.mainCharacter = mainCharacter;
 		cloud = Resource.getResouceImage("data/cloud.png");
 		listCloud = new ArrayList<ImageCloud>();

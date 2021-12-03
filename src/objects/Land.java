@@ -18,9 +18,9 @@ public class Land implements IObject {
 	private BufferedImage land2;
 	private BufferedImage land3;
 	
-	private MainCharacter mainCharacter;
+	private CharacterDecorator mainCharacter;
 	
-	public Land(int width, MainCharacter mainCharacter) {
+	public Land(int width, CharacterDecorator mainCharacter) {
 		this.mainCharacter = mainCharacter;
 		land1 = Resource.getResouceImage("data/land1.png");
 		land2 = Resource.getResouceImage("data/land2.png");
