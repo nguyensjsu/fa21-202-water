@@ -29,6 +29,17 @@ Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacle
 &nbsp;
 ![main-character6](https://user-images.githubusercontent.com/67829172/144568805-ec039e6e-25e9-4b81-adf0-ca724585e7af.png)
 
+### [Project Dashboard](https://github.com/nguyensjsu/fa21-202-water/projects/1)
+Insert Image
+
+### [Burndown Map](Insert Url)
+Insert Image
+
+
+We tracked issues in project dashboard as:
+ * TO-DO
+ * IN PROGRESS
+ * DONE
 
 ### Individual Contributions
 * Anujot - State Pattern, User Interface, Graphic Images Creation, Documentation, Demo Video, Agile Video
