@@ -24,5 +24,6 @@ Water
 
 ## About Game
 Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacles to achieve a higher score. You can now change your character! Play as Tyrannosaurus rex, Bruce Lee or Mario!
+
 ![main-character1](https://user-images.githubusercontent.com/67829172/144568764-0f28c26a-79da-480f-b12a-80c1df91849e.png)
 ![main-character6](https://user-images.githubusercontent.com/67829172/144568805-ec039e6e-25e9-4b81-adf0-ca724585e7af.png)
