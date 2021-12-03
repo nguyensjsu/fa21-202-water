@@ -3,18 +3,12 @@
 ## Team Name
 Water
 
-# Team Project Repo 
-https://github.com/nguyensjsu/fa21-202-water
-
 ## Team Members
 
 * [Adarsh Patil](https://github.com/adpatil036)
 * [Anujot Singh](https://github.com/tojuna)
 * [Rohit K Philip](https://github.com/rohitkphilip)
 * [Yash Modi](https://github.com/yashm28)
-
-## Chrome Dino      [Watch Trailer]
-
 
 ## How to run the game
 * Install AWT, Swing
