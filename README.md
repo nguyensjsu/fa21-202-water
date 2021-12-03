@@ -1,10 +1,10 @@
-# Team Project (Replace with your Team Name and Journal)
-
-# Team Project Repo 
-https://github.com/nguyensjsu/fa21-202-water
+# Chrome Dino [Watch Trailer](InsertUrl)
 
 ## Team Name
 Water
+
+# Team Project Repo 
+https://github.com/nguyensjsu/fa21-202-water
 
 ## Team Members
 
