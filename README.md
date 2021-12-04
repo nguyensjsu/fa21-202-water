@@ -49,9 +49,11 @@ We tracked issues in project dashboard as:
 ### [Burndown Chart](https://docs.google.com/spreadsheets/d/1SoNHd6VdUsYvqtHj7YMbvN_78-oVNKeAV7NsBcfKB68/edit?usp=sharing)
 
 * Task Sheet
+  
 ![Task Sheet](./images/TaskSheet.png)
 
 * Burndown Chart
+  
 ![Burndown Chart](./images/BurndownTeamWater.png) 
 
 ### [Retrospective Dashboard](./images/retrospective-dashboard.png)
