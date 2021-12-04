@@ -96,3 +96,9 @@ We tracked issues in project dashboard as:
 * Adarsh - Singleton Pattern, Animation Logic, Background Sound, User Story Video
 * Rohit - Decorator Pattern, Graphic Images Creation, Util, Character Selection
 * Yash -  Abstract Factory Pattern, Diagrams, Connecting components, Characters and Objects
+
+### Team Journals
+* [Anujot](https://docs.google.com/document/d/1OtRYFB6AZ2-ywfoYEYmuGZvEknHGLNkGpVMCrY4hjX8/edit)
+* Adarsh
+* Rohit
+* Yash 
