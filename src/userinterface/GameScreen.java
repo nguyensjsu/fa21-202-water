@@ -8,9 +8,9 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
-import objects.*;
-import objects.EnemiesManager;
-import objects.CharacterDecorator;
+import objects.ClassicObjectFactory;
+import objects.IObject;
+import objects.IObjectFactory;
 import util.Resource;
 import util.Settings;
 
@@ -23,7 +23,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	private IGameState state;
 	private Settings settings;
 
-	//private final IObjectFactoryFactory factoryFactory;
+	// private final IObjectFactoryFactory factoryFactory;
 	private IObjectFactory objectFactory;
 
 	private boolean isKeyPressed;
@@ -43,13 +43,13 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		gameOverState = new GameOverState(this);
 		gamePlayingState = new GamePlayingState(this);
 
-		//this.setStateStartGameState();
+		// this.setStateStartGameState();
 		this.setStateCharacterSelectionState();
 
-		//factoryFactory = new RandomFactoryFactory();
+		// factoryFactory = new RandomFactoryFactory();
 		objectFactory = new ClassicObjectFactory();
 
-		//objectFactory.getCharacterDecorator().setSpeedX(4);
+		// objectFactory.getCharacterDecorator().setSpeedX(4);
 
 		replayButtonImage = Resource.getResouceImage("data/replay_button.png");
 		gameOverButtonImage = Resource.getResouceImage("data/gameover_text.png");
@@ -76,8 +76,8 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		} else if (objectFactory.getPowerUpManager().isCollision()) {
 			objectFactory.getCharacterDecorator().playDeadSound();
 			objectFactory.getCharacterDecorator().IncreaseHealth();
-//			state.nextState();
-//			objectFactory.getCharacterDecorator().dead(true);
+			// state.nextState();
+			// objectFactory.getCharacterDecorator().dead(true);
 		}
 	}
 
@@ -99,17 +99,17 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	public void paintGamePlayingState(Graphics g) {
 		objectFactory.getObjects().forEach((object) -> object.draw(g));
 		g.setColor(Color.BLACK);
-		//g.drawString("HI " + objectFactory.getCharacterDecorator().score, 500, 20);
+		// g.drawString("HI " + objectFactory.getCharacterDecorator().score, 500, 20);
 		g.drawString("HI " + objectFactory.getCharacterDecorator().score, 500, 20);
 		g.drawString("Health " + objectFactory.getCharacterDecorator().health, 500, 35);
 	}
 
 	public void paintStartGameState(Graphics g) {
-		//objectFactory.getCharacterDecorator().playThemeSound();
+		objectFactory.getCharacterDecorator().playThemeSound();
 		objectFactory.getCharacterDecorator().draw(g);
 	}
 
-	public void paintCharacterSelectionState(Graphics g){
+	public void paintCharacterSelectionState(Graphics g) {
 		g.setColor(Color.BLACK);
 		g.drawString("Select character ", 250, 35);
 		g.drawString("1. BruceLee ", 250, 55);
@@ -135,7 +135,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		int nanoSleep;
 
 		int counter = 0;
-//		int counter2 = 0;
+		// int counter2 = 0;
 
 		while (true) {
 			gameUpdate();
@@ -144,12 +144,12 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 				msPerFrame = increaseFPS();
 				counter = 0;
 			}
-//			if (counter2 % 200 == 0) {
-//				objectFactory = settings.getNewFactory();
-//				counter2 = 0;
-//			}
+			// if (counter2 % 200 == 0) {
+			// objectFactory = settings.getNewFactory();
+			// counter2 = 0;
+			// }
 			counter++;
-//			counter2++;
+			// counter2++;
 			elapsed = (lastTime + msPerFrame - System.nanoTime());
 			msSleep = (int) (elapsed / 1000000);
 			nanoSleep = (int) (elapsed % 1000000);
@@ -242,7 +242,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		state = startGameState;
 	}
 
-	public void setStateCharacterSelectionState(){
+	public void setStateCharacterSelectionState() {
 		state = characterSelectionState;
 	}
 
