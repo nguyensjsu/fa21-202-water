@@ -25,6 +25,8 @@ Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacle
 &nbsp;
 ![mario-3](https://user-images.githubusercontent.com/67829172/144722625-d96079e7-0f9c-4136-b8a4-0e13dcde90f0.png)
 
+## [UI Wireframes](./images/ui-wireframes.png)
+
 
 We tracked issues in project dashboard as:
  * TO-DO
@@ -60,6 +62,7 @@ We tracked issues in project dashboard as:
 ### [Decorator](./images/decorator_pattern_class_diagram.png)
 
 ![decorator_pattern_class_diagram](https://user-images.githubusercontent.com/89710394/144723089-d79de368-1278-4fcf-8d69-df2533dcc047.png)
+Decorator pattern has been implemented for character selection.
 
 
 ### Singleton
