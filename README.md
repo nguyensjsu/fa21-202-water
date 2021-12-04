@@ -43,6 +43,8 @@ We tracked issues in project dashboard as:
 * Burndown Chart
 ![Burndown Chart](./images/BurndownTeamWater.png) 
 
+### [Retrospective Dashboard](./images/retrospective-dashboard.png)
+
 ## Design Notes
 
 ### State Pattern
