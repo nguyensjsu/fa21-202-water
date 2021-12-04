@@ -1,4 +1,5 @@
-# Chrome Dino [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
+# Chrome Dino </br>
+### [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
 
 ## Team Name
 Water
@@ -66,6 +67,8 @@ Decorator pattern has been implemented for character selection.
 
 
 ### Singleton
+<img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="./images/singleton.png">
+-   Singleton Pattern is used in settings screen.
 
 ### Abstract Factory
 
