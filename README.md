@@ -2,6 +2,7 @@
 ### [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
 ### [Recorded Demo](https://youtu.be/dPIWv86ULjM)
 ### [Scrum Meeting](Link coming soon)
+### [Link to our work video after scrums](https://drive.google.com/file/d/1Mfdq_JS-9BlWed0IoxLoIsUygwCDtalj/view?usp=sharing)
 
 ## Team Name
 Water
