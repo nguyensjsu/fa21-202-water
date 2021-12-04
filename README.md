@@ -32,10 +32,13 @@ Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacle
 
 ## Game Screenshots
 #### Main Menu
+<img width="599" alt="screenshot-1" src="https://user-images.githubusercontent.com/89710394/144723847-c029eb43-7d98-44a7-ab89-5803efcaf2e3.png">
 
 #### Game Play
+<img width="599" alt="screenshot-2" src="https://user-images.githubusercontent.com/89710394/144723849-f2799bf7-478d-423b-a379-e8dd783125e6.png">
 
 #### Game End
+<img width="603" alt="screenshot-3" src="https://user-images.githubusercontent.com/89710394/144723850-4dfa6622-b17b-4be6-a124-8a93953a5e17.png">
 
 
 
