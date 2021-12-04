@@ -29,6 +29,8 @@ public class CharacterSelectionState implements IGameState {
             state.keyCharacterSelectionState(2);
         }else if (e.getKeyCode() == KeyEvent.VK_3) {
             state.keyCharacterSelectionState(3);
+        }else if (e.getKeyCode() == KeyEvent.VK_4) {
+            state.keyCharacterSelectionState(4);
         }
     }
 

@@ -10,11 +10,11 @@ public interface IObjectFactory {
 
     CharacterDecorator getCharacterDecorator();
 
-    EnemiesManager getEnemyManager();
+    IEnemyManager getEnemyManager();
 
     PowerUpsManager getPowerUpManager();
 
     List<IObject> getObjects();
 
-    void initialise(int character);
+//    void initialise(int character);
 }

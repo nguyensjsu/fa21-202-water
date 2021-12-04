@@ -10,6 +10,8 @@ public interface IGameScreenState {
 
     void setStateStartGameState();
 
+    void setStateCharacterSelectionState();
+
     void paintGameOverState(Graphics g);
 
     void paintGamePlayingState(Graphics g);

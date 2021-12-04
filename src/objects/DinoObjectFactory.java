@@ -1,10 +1,12 @@
 package objects;
 
+import userinterface.GameWindow;
+import util.Settings;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import userinterface.GameWindow;
-import util.Settings;
+import static util.Settings.Character.*;
 
 public class DinoObjectFactory implements IObjectFactory {
 
@@ -18,7 +20,7 @@ public class DinoObjectFactory implements IObjectFactory {
 
         this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
         this.land = new Land(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
-        this.enemyManager = new EnemiesManager((CharacterDecorator) this.mainCharacter);
+        this.enemyManager= new EnemiesManager((CharacterDecorator) this.mainCharacter);
         this.powerUpManager = new PowerUpsManager((CharacterDecorator) this.mainCharacter);
         this.objects.add(clouds);
         this.objects.add(land);

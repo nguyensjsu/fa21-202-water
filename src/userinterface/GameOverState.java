@@ -13,7 +13,7 @@ public class GameOverState implements IGameState {
 
     @Override
     public void nextState() {
-        state.setStateGamePlayingState();
+        state.setStateCharacterSelectionState();
     }
 
     @Override

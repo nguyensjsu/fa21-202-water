@@ -4,33 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import userinterface.GameWindow;
+import util.Settings;
+
+import static util.Settings.Character.*;
 
 public class ClassicObjectFactory implements IObjectFactory {
 
     private IObject clouds, land, enemyManager, powerUpManager;
     private IObject mainCharacter;
     private List<IObject> objects = new ArrayList<>();
-
-    private final int CHARACTER_BRUCE_LEE = 1;
-    private final int CHARACTER_DINOSAUR = 2;
-    private final int CHARACTER_MARIO = 3;
+    private Settings settings;
 
     public ClassicObjectFactory() {
-        // this.mainCharacter = new CharacterDecorator();
-        // this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator)
-        // mainCharacter);
-        // this.land = new Land(GameWindow.SCREEN_WIDTH, (CharacterDecorator)
-        // mainCharacter);
-        // this.enemyManager= new EnemiesManager((CharacterDecorator)
-        // this.mainCharacter);
-        // this.objects.add(clouds);
-        // this.objects.add(land);
-        // this.objects.add(enemyManager);
-        // this.objects.add(mainCharacter);
+        settings = Settings.getInstance();
+        Settings.Character character = settings.getCharacter();
 
-    }
-
-    public void initialise(int character) {
         if (character == CHARACTER_BRUCE_LEE) {
             this.mainCharacter = new CharacterDecorator(new CharacterBruceLee());
         } else if (character == CHARACTER_DINOSAUR) {
@@ -41,14 +29,13 @@ public class ClassicObjectFactory implements IObjectFactory {
 
         this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
         this.land = new Land(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
-        this.enemyManager = new EnemiesManager((CharacterDecorator) this.mainCharacter);
+        this.enemyManager= new EnemiesManager((CharacterDecorator) this.mainCharacter);
         this.powerUpManager = new PowerUpsManager((CharacterDecorator) this.mainCharacter);
         this.objects.add(clouds);
         this.objects.add(land);
         this.objects.add(enemyManager);
-        this.objects.add(powerUpManager);
         this.objects.add(mainCharacter);
-
+        this.objects.add(powerUpManager);
     }
 
     @Override
@@ -67,8 +54,8 @@ public class ClassicObjectFactory implements IObjectFactory {
     }
 
     @Override
-    public EnemiesManager getEnemyManager() {
-        return (EnemiesManager) enemyManager;
+    public IEnemyManager getEnemyManager() {
+        return (IEnemyManager) enemyManager;
     }
 
     @Override

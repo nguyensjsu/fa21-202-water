@@ -8,7 +8,7 @@ import java.util.Random;
 
 import util.Resource;
 
-public class EnemiesManager implements IObject {
+public class EnemiesManager implements IObject, IEnemyManager {
 
     private BufferedImage cactus1;
     private BufferedImage cactus2;

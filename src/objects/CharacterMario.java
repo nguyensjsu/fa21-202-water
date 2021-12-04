@@ -16,7 +16,7 @@ public class CharacterMario extends Character {
         normalRunAnim = new Animation(90);
         normalRunAnim.addFrame(Resource.getResouceImage("data/Mario/mario-1.png"));
         normalRunAnim.addFrame(Resource.getResouceImage("data/Mario/mario-2.png"));
-        normalRunAnim.addFrame(Resource.getResouceImage("data/Mario/mario-3.png"));
+//        normalRunAnim.addFrame(Resource.getResouceImage("data/Mario/mario-3.png"));
         return normalRunAnim;
     }
     public BufferedImage getJumpingImage(){

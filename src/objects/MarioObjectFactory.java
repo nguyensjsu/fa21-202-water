@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import userinterface.GameWindow;
+import util.Settings;
+
+import static util.Settings.Character.*;
 
 public class MarioObjectFactory implements IObjectFactory {
+
     private IObject clouds, land, enemyManager, powerUpManager;
     private IObject mainCharacter;
     private List<IObject> objects = new ArrayList<>();
@@ -15,7 +19,7 @@ public class MarioObjectFactory implements IObjectFactory {
 
         this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
         this.land = new Land(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
-        this.enemyManager = new BulletEnemyManager((CharacterDecorator) this.mainCharacter);
+        this.enemyManager= new BulletEnemyManager((CharacterDecorator) this.mainCharacter);
         this.powerUpManager = new PowerUpsManager((CharacterDecorator) this.mainCharacter);
         this.objects.add(clouds);
         this.objects.add(land);

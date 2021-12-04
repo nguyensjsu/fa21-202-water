@@ -9,7 +9,6 @@ public class Settings {
     public enum Character {
         CHARACTER_BRUCE_LEE, CHARACTER_DINOSAUR, CHARACTER_MARIO, CHARACTER_RANDOM
     };
-
     private final IObjectFactoryFactory factorySelector;
     private Character character;
 
@@ -36,7 +35,7 @@ public class Settings {
     }
 
     public Character getCharacter() {
-        return this.character;
+        return  this.character;
     }
 
 }
