@@ -101,5 +101,5 @@ We tracked issues in project dashboard as:
 ### Team Journals
 * [Anujot](https://docs.google.com/document/d/1OtRYFB6AZ2-ywfoYEYmuGZvEknHGLNkGpVMCrY4hjX8/edit)
 * Adarsh
-* Rohit
+* [Rohit](./journals/rohit-team-project-journal.md)
 * [Yash](https://docs.google.com/document/d/19b-PiPMiilFd61TAujqmiiGorWQeAdAyjc6aWBsXgiU/edit)
