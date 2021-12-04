@@ -1,7 +1,4 @@
-# Team Project (Replace with your Team Name and Journal)
-
-# Team Project Repo 
-https://github.com/nguyensjsu/fa21-202-water
+# Chrome Dino [Watch Trailer](InsertUrl)
 
 ## Team Name
 Water
@@ -12,9 +9,6 @@ Water
 * [Anujot Singh](https://github.com/tojuna)
 * [Rohit K Philip](https://github.com/rohitkphilip)
 * [Yash Modi](https://github.com/yashm28)
-
-## Chrome Dino      [Watch Trailer]
-
 
 ## How to run the game
 * Install AWT, Swing
