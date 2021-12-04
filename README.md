@@ -54,7 +54,9 @@ We tracked issues in project dashboard as:
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="https://user-images.githubusercontent.com/67829172/144722594-e65b6252-16ed-4dc7-968d-be93d295b54b.png">
 State Pattern been used to transition between states.
 
-### Decorator
+### [Decorator](./images/decorator_pattern_class_diagram.png)
+![decorator_pattern_class_diagram](https://user-images.githubusercontent.com/89710394/144723089-d79de368-1278-4fcf-8d69-df2533dcc047.png)
+
 
 ### Singleton
 
