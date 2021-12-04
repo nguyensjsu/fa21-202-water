@@ -38,9 +38,11 @@ We tracked issues in project dashboard as:
 ### [Burndown Chart](https://docs.google.com/spreadsheets/d/1SoNHd6VdUsYvqtHj7YMbvN_78-oVNKeAV7NsBcfKB68/edit?usp=sharing)
 
 * Task Sheet
+  
 ![Task Sheet](./images/TaskSheet.png)
 
 * Burndown Chart
+  
 ![Burndown Chart](./images/BurndownTeamWater.png) 
 
 ### [Retrospective Dashboard](./images/retrospective-dashboard.png)
@@ -52,15 +54,21 @@ We tracked issues in project dashboard as:
 ### State Pattern
 
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="https://user-images.githubusercontent.com/67829172/144722594-e65b6252-16ed-4dc7-968d-be93d295b54b.png">
-State Pattern been used to transition between states.
+
+-   State Pattern been used to transition between states.
 
 ### [Decorator](./images/decorator_pattern_class_diagram.png)
+
 ![decorator_pattern_class_diagram](https://user-images.githubusercontent.com/89710394/144723089-d79de368-1278-4fcf-8d69-df2533dcc047.png)
 
 
 ### Singleton
 
 ### Abstract Factory
+
+<img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="./images/ClassDiagramAbstractFactory.jpg">
+
+-   Abstract Factory Pattern used to fetch a set of objects of same kind in real time
 
 
 ### Individual Contributions
