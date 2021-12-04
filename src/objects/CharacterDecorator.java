@@ -99,6 +99,7 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
         if (!clip.isActive()) {
             clip.setFramePosition(0);
             clip.start();
+            clip.loop(30);
         }
     }
 
@@ -196,6 +197,10 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
 
     public void playDeadSound() {
         clip.stop();
+        deadSound.play();
+    }
+
+    public void playBonusSound() {
         deadSound.play();
     }
 

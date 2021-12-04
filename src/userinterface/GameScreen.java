@@ -74,7 +74,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 			state.nextState();
 			objectFactory.getCharacterDecorator().dead(true);
 		} else if (objectFactory.getPowerUpManager().isCollision()) {
-			objectFactory.getCharacterDecorator().playDeadSound();
+			objectFactory.getCharacterDecorator().playBonusSound();
 			objectFactory.getCharacterDecorator().IncreaseBonus();
 			// state.nextState();
 			// objectFactory.getCharacterDecorator().dead(true);
