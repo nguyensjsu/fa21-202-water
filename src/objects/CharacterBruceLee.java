@@ -20,14 +20,14 @@ public class CharacterBruceLee extends Character{
         return normalRunAnim;
     }
     public BufferedImage getJumpingImage(){
-        jumping = Resource.getResouceImage("data/Bruce/main-character5.png");
+        jumping = Resource.getResouceImage("data/Bruce/main-character3.png");
         return jumping;
     }
 
     public Animation getDownRunAnimation(){
         downRunAnim = new Animation(90);
-        downRunAnim.addFrame(Resource.getResouceImage("data/Trex/main-character5.png"));
-        downRunAnim.addFrame(Resource.getResouceImage("data/Trex/main-character6.png"));
+        downRunAnim.addFrame(Resource.getResouceImage("data/Bruce/main-character5.png"));
+        downRunAnim.addFrame(Resource.getResouceImage("data/Bruce/main-character6.png"));
         return downRunAnim;
     }
 

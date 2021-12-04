@@ -20,7 +20,7 @@ public class CharacterDinosaur extends Character{
         return normalRunAnim;
     }
     public BufferedImage getJumpingImage(){
-        jumping = Resource.getResouceImage("data/Trex/main-character2.png.png");
+        jumping = Resource.getResouceImage("data/Trex/main-character3.png");
         return jumping;
     }
 

@@ -32,11 +32,11 @@ public class ClassicObjectFactory implements IObjectFactory {
 
     public void initialise(int character) {
         if (character == CHARACTER_BRUCE_LEE) {
-            this.mainCharacter = CharacterDecorator.getInstance(new CharacterBruceLee());
+            this.mainCharacter = new CharacterDecorator(new CharacterBruceLee());
         } else if (character == CHARACTER_DINOSAUR) {
-            this.mainCharacter = CharacterDecorator.getInstance(new CharacterDinosaur());
+            this.mainCharacter = new CharacterDecorator(new CharacterDinosaur());
         } else if (character == CHARACTER_MARIO) {
-            this.mainCharacter = CharacterDecorator.getInstance(new CharacterMario());
+            this.mainCharacter = new CharacterDecorator(new CharacterMario());
         }
 
         this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);

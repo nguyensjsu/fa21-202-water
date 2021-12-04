@@ -42,7 +42,7 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
     private AudioClip deadSound;
     private AudioClip scoreUpSound;
 
-    private CharacterDecorator(Character wrapped) {
+    public CharacterDecorator(Character wrapped) {
         this.wrapped = wrapped;
         posX = 50;
         posY = LAND_POSY;
@@ -74,15 +74,15 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
             e.printStackTrace();
         }
     }
-
-    static private CharacterDecorator instance;
-
-    public static CharacterDecorator getInstance() {
-        if (instance == null) {
-            instance = new CharacterDecorator();
-        }
-        return instance;
-    }
+//
+//    static private CharacterDecorator instance;
+//
+//    public static CharacterDecorator getInstance() {
+//        if (instance == null) {
+//            instance = new CharacterDecorator();
+//        }
+//        return instance;
+//    }
 
     public float getSpeedX() {
         return speedX;
@@ -101,7 +101,7 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
                 g.drawImage(jumping, (int) posX, (int) posY, null);
                 break;
             case DOWN_RUN:
-                g.drawImage(downRunAnim.getFrame(), (int) posX, (int) (posY + 20), null);
+                g.drawImage(downRunAnim.getFrame(), (int) posX, (int) (posY), null);
                 break;
             case DEATH:
                 g.drawImage(deathImage, (int) posX, (int) posY, null);
