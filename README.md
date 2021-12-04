@@ -1,5 +1,6 @@
 # Chrome Dino </br>
 ### [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
+### [Recorded Demo](https://youtu.be/dPIWv86ULjM)
 
 ## Team Name
 Water
@@ -62,19 +63,27 @@ We tracked issues in project dashboard as:
 ### State Pattern
 
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="https://user-images.githubusercontent.com/67829172/144722594-e65b6252-16ed-4dc7-968d-be93d295b54b.png">
-State Pattern been used to transition between states.
+
+-   State Pattern been used to transition between states.
 
 ### [Decorator](./images/decorator_pattern_class_diagram.png)
+
 ![decorator_pattern_class_diagram](https://user-images.githubusercontent.com/89710394/144723089-d79de368-1278-4fcf-8d69-df2533dcc047.png)
-Decorator pattern has been implemented for character selection.
+
+-   Decorator pattern has been implemented for character selection.
 
 
 ### Singleton
+
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="./images/singleton.png">
+
 -   Singleton Pattern is used in settings screen.
 
 ### Abstract Factory
 
+<img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="./images/ClassDiagramAbstractFactory.jpg">
+
+-   Abstract Factory Pattern is used to fetch objects of same kind at runtime for different choices of character.
 
 ### Individual Contributions
 * Anujot - State Pattern, User Interface, Graphic Images Creation, Documentation, Demo Video, Agile Video
