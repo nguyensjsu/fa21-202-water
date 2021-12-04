@@ -56,15 +56,15 @@ public class Character implements ICharacter{
 
     }
 
-    public void resetHealth(){
+    public void resetBonus(){
 
     }
 
-    public void DecreaseHealth(){
+    public void DecreaseBonus(){
 
     }
 
-    public void IncreaseHealth(){
+    public void IncreaseBonus(){
 
     }
 

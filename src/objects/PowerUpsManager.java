@@ -18,7 +18,7 @@ public class PowerUpsManager implements IObject {
 
     public PowerUpsManager(CharacterDecorator mainCharacter) {
         rand = new Random();
-        mushroom = Resource.getResouceImage("data/mushroom.png");
+        mushroom = Resource.getResourceImage("data/mushroom.png");
         powerups = new ArrayList<PowerUp>();
         this.mainCharacter = mainCharacter;
         powerups.add(createPowerUp());

@@ -19,8 +19,8 @@ public class EnemiesManager implements IObject, IEnemyManager {
 
     public EnemiesManager(CharacterDecorator mainCharacter) {
         rand = new Random();
-        cactus1 = Resource.getResouceImage("data/cactus1.png");
-        cactus2 = Resource.getResouceImage("data/cactus2.png");
+        cactus1 = Resource.getResourceImage("data/cactus1.png");
+        cactus2 = Resource.getResourceImage("data/cactus2.png");
         enemies = new ArrayList<Enemy>();
         this.mainCharacter = mainCharacter;
         enemies.add(createEnemy());

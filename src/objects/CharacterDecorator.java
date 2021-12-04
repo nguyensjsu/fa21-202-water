@@ -33,7 +33,7 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
     private Rectangle rectBound;
 
     public int score = 0;
-    public int health = 100;
+    public int bonus = 0;
 
     private int state = NORMAL_RUN;
 
@@ -54,21 +54,21 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
         rectBound = new Rectangle();
 
         // normalRunAnim = new Animation(90);
-        // normalRunAnim.addFrame(Resource.getResouceImage("data/bl1.jpeg"));
-        // normalRunAnim.addFrame(Resource.getResouceImage("data/bl2.jpeg"));
+        // normalRunAnim.addFrame(Resource.getResourceImage("data/bl1.jpeg"));
+        // normalRunAnim.addFrame(Resource.getResourceImage("data/bl2.jpeg"));
 
         normalRunAnim = wrapped.getNormalRunAnimation();
 
-        // jumping = Resource.getResouceImage("data/bl3.jpeg");
+        // jumping = Resource.getResourceImage("data/bl3.jpeg");
         jumping = wrapped.getJumpingImage();
 
         // downRunAnim = new Animation(90);
-        // downRunAnim.addFrame(Resource.getResouceImage("data/main-character5.png"));
-        // downRunAnim.addFrame(Resource.getResouceImage("data/main-character6.png"));
+        // downRunAnim.addFrame(Resource.getResourceImage("data/main-character5.png"));
+        // downRunAnim.addFrame(Resource.getResourceImage("data/main-character6.png"));
 
         downRunAnim = wrapped.getDownRunAnimation();
 
-        // deathImage = Resource.getResouceImage("data/main-character4.png");
+        // deathImage = Resource.getResourceImage("data/main-character4.png");
         deathImage = wrapped.getDeathImage();
         File themeSoundFile = new File("data/theme.wav");
 
@@ -210,16 +210,16 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
         score = 0;
     }
 
-    public void resetHealth() {
-        health = 100;
+    public void resetBonus() {
+        bonus = 100;
     }
 
-    public void DecreaseHealth() {
-        health -= 1;
+    public void DecreaseBonus() {
+        bonus -= 1;
     }
 
-    public void IncreaseHealth() {
-        health += 1;
+    public void IncreaseBonus() {
+        bonus += 1;
     }
 
 }

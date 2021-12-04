@@ -51,8 +51,8 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 
 		// objectFactory.getCharacterDecorator().setSpeedX(4);
 
-		replayButtonImage = Resource.getResouceImage("data/replay_button.png");
-		gameOverButtonImage = Resource.getResouceImage("data/gameover_text.png");
+		replayButtonImage = Resource.getResourceImage("data/replay_button.png");
+		gameOverButtonImage = Resource.getResourceImage("data/gameover_text.png");
 		settings = Settings.getInstance();
 	}
 
@@ -69,13 +69,13 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		objectFactory.getObjects().forEach(IObject::update);
 		if (objectFactory.getEnemyManager().isCollision()) {
 			objectFactory.getCharacterDecorator().playDeadSound();
-			objectFactory.getCharacterDecorator().resetHealth();
+			objectFactory.getCharacterDecorator().resetBonus();
 			objectFactory.getCharacterDecorator().resetScore();
 			state.nextState();
 			objectFactory.getCharacterDecorator().dead(true);
 		} else if (objectFactory.getPowerUpManager().isCollision()) {
 			objectFactory.getCharacterDecorator().playDeadSound();
-			objectFactory.getCharacterDecorator().IncreaseHealth();
+			objectFactory.getCharacterDecorator().IncreaseBonus();
 			// state.nextState();
 			// objectFactory.getCharacterDecorator().dead(true);
 		}
@@ -91,7 +91,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		fps = 40;
 		objectFactory.getObjects().forEach((object) -> object.draw(g));
 		g.setColor(Color.BLACK);
-		g.drawString("HI " + objectFactory.getCharacterDecorator().score, 500, 20);
+		g.drawString("Score " + objectFactory.getCharacterDecorator().score, 500, 20);
 		g.drawImage(gameOverButtonImage, 200, 30, null);
 		g.drawImage(replayButtonImage, 283, 50, null);
 	}
@@ -100,8 +100,8 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		objectFactory.getObjects().forEach((object) -> object.draw(g));
 		g.setColor(Color.BLACK);
 		// g.drawString("HI " + objectFactory.getCharacterDecorator().score, 500, 20);
-		g.drawString("HI " + objectFactory.getCharacterDecorator().score, 500, 20);
-		g.drawString("Health " + objectFactory.getCharacterDecorator().health, 500, 35);
+		g.drawString("Score " + objectFactory.getCharacterDecorator().score, 500, 20);
+		g.drawString("Bonus " + objectFactory.getCharacterDecorator().bonus, 500, 35);
 	}
 
 	public void paintStartGameState(Graphics g) {
@@ -111,10 +111,11 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 
 	public void paintCharacterSelectionState(Graphics g) {
 		g.setColor(Color.BLACK);
-		g.drawString("Select character ", 250, 35);
-		g.drawString("1. BruceLee ", 250, 55);
-		g.drawString("2. Dinosaur ", 250, 75);
-		g.drawString("3. Mario ", 250, 95);
+		g.drawString("Select character ", 220, 35);
+		g.drawString("Press 1 for  BruceLee ", 220, 55);
+		g.drawString("Press 2 for Dinosaur ", 220, 75);
+		g.drawString("Press 3 for Mario ", 220, 95);
+		g.drawString("Press 4 for Random Characters ", 220, 115);
 
 	}
 

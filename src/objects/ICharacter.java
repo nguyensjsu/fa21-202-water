@@ -28,9 +28,9 @@ public interface ICharacter {
 
     public void resetScore();
 
-    public void resetHealth();
+    public void resetBonus();
 
-    public void DecreaseHealth();
+    public void DecreaseBonus();
 
-    public void IncreaseHealth();
+    public void IncreaseBonus();
 }

@@ -22,9 +22,9 @@ public class Land implements IObject {
 	
 	public Land(int width, CharacterDecorator mainCharacter) {
 		this.mainCharacter = mainCharacter;
-		land1 = Resource.getResouceImage("data/land1.png");
-		land2 = Resource.getResouceImage("data/land2.png");
-		land3 = Resource.getResouceImage("data/land3.png");
+		land1 = Resource.getResourceImage("data/land1.png");
+		land2 = Resource.getResourceImage("data/land2.png");
+		land3 = Resource.getResourceImage("data/land3.png");
 		int numberOfImageLand = width / land1.getWidth() + 2;
 		listLand = new ArrayList<ImageLand>();
 		for(int i = 0; i < numberOfImageLand; i++) {

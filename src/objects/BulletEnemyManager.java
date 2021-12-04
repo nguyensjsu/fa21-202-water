@@ -19,8 +19,8 @@ public class BulletEnemyManager implements IObject, IEnemyManager {
 
     public BulletEnemyManager(CharacterDecorator mainCharacter) {
         rand = new Random();
-        cactus1 = Resource.getResouceImage("data/bullet.png");
-        cactus2 = Resource.getResouceImage("data/bullet.png");
+        cactus1 = Resource.getResourceImage("data/bullet.png");
+        cactus2 = Resource.getResourceImage("data/bullet.png");
         enemies = new ArrayList<Enemy>();
         this.mainCharacter = mainCharacter;
         enemies.add(createEnemy());
