@@ -43,5 +43,5 @@ We tracked issues in project dashboard as:
 ### Individual Contributions
 * Anujot - State Pattern, User Interface, Graphic Images Creation, Documentation, Demo Video, Agile Video
 * Adarsh - Singleton Pattern, Animation Logic, Background Sound, User Story Video
-* Rohit - Decorator Pattern, Graphic Images Creation, Util, Character Selection
+* Rohit - Decorator Pattern, Creating Images for characters and objects, Util Classes, Character Selection Screen
 * Yash -  Abstract Factory Pattern, Diagrams, Connecting components, Characters and Objects
