@@ -14,24 +14,25 @@ public class CharacterBruceLee extends Character{
 
     public Animation getNormalRunAnimation(){
         normalRunAnim = new Animation(90);
-        normalRunAnim.addFrame(Resource.getResouceImage("data/bl1.jpeg"));
-        normalRunAnim.addFrame(Resource.getResouceImage("data/bl2.jpeg"));
+        normalRunAnim.addFrame(Resource.getResouceImage("data/Bruce/main-character1.png"));
+        normalRunAnim.addFrame(Resource.getResouceImage("data/Bruce/main-character2.png"));
+        normalRunAnim.addFrame(Resource.getResouceImage("data/Bruce/main-character3.png"));
         return normalRunAnim;
     }
     public BufferedImage getJumpingImage(){
-        jumping = Resource.getResouceImage("data/bl3.jpeg");
+        jumping = Resource.getResouceImage("data/Bruce/main-character5.png");
         return jumping;
     }
 
     public Animation getDownRunAnimation(){
         downRunAnim = new Animation(90);
-        downRunAnim.addFrame(Resource.getResouceImage("data/main-character5.png"));
-        downRunAnim.addFrame(Resource.getResouceImage("data/main-character6.png"));
+        downRunAnim.addFrame(Resource.getResouceImage("data/Trex/main-character5.png"));
+        downRunAnim.addFrame(Resource.getResouceImage("data/Trex/main-character6.png"));
         return downRunAnim;
     }
 
     public BufferedImage getDeathImage(){
-        deathImage = Resource.getResouceImage("data/main-character4.png");
+        deathImage = Resource.getResouceImage("data/Bruce/main-character4.png");
         return deathImage;
     }
 }

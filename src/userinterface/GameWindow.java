@@ -9,7 +9,7 @@ public class GameWindow extends JFrame {
 	
 	public GameWindow() {
 		super("Google Chrome T-Rex Game");
-		setSize(SCREEN_WIDTH, 175);
+		setSize(SCREEN_WIDTH, 400);
 		setLocation(400, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);

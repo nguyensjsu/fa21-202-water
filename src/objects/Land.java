@@ -11,7 +11,7 @@ import util.Resource;
 
 public class Land implements IObject {
 	
-	public static final int LAND_POSY = 103;
+	public static final int LAND_POSY = 303;
 	
 	private List<ImageLand> listLand;
 	private BufferedImage land1;

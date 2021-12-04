@@ -100,7 +100,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 	}
 
 	public void paintStartGameState(Graphics g) {
-		objectFactory.getCharacterDecorator().playThemeSound();
+		//objectFactory.getCharacterDecorator().playThemeSound();
 		objectFactory.getCharacterDecorator().draw(g);
 	}
 
@@ -109,7 +109,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener, IGameSc
 		g.drawString("Select character ", 250, 35);
 		g.drawString("1. BruceLee ", 250, 55);
 		g.drawString("2. Dinosaur ", 250, 75);
-		g.drawString("3. Dinosaur ", 250, 95);
+		g.drawString("3. Mario ", 250, 95);
 
 	}
 
