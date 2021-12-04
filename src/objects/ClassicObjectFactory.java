@@ -1,9 +1,9 @@
 package objects;
 
-import userinterface.GameWindow;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import userinterface.GameWindow;
 
 public class ClassicObjectFactory implements IObjectFactory {
 
@@ -16,31 +16,33 @@ public class ClassicObjectFactory implements IObjectFactory {
     private final int CHARACTER_MARIO = 3;
 
     public ClassicObjectFactory() {
-//        this.mainCharacter = new CharacterDecorator();
-//        this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
-//        this.land = new Land(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
-//        this.enemyManager= new EnemiesManager((CharacterDecorator) this.mainCharacter);
-//        this.objects.add(clouds);
-//        this.objects.add(land);
-//        this.objects.add(enemyManager);
-//        this.objects.add(mainCharacter);
+        // this.mainCharacter = new CharacterDecorator();
+        // this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator)
+        // mainCharacter);
+        // this.land = new Land(GameWindow.SCREEN_WIDTH, (CharacterDecorator)
+        // mainCharacter);
+        // this.enemyManager= new EnemiesManager((CharacterDecorator)
+        // this.mainCharacter);
+        // this.objects.add(clouds);
+        // this.objects.add(land);
+        // this.objects.add(enemyManager);
+        // this.objects.add(mainCharacter);
 
     }
 
-    public void initialise(int character){
-        if(character == CHARACTER_BRUCE_LEE){
-            this.mainCharacter = new CharacterDecorator(new CharacterBruceLee());
-        } else if(character == CHARACTER_DINOSAUR){
-            this.mainCharacter = new CharacterDecorator(new CharacterDinosaur());
-        }else if(character == CHARACTER_MARIO) {
-            this.mainCharacter = new CharacterDecorator(new CharacterMario());
+    public void initialise(int character) {
+        if (character == CHARACTER_BRUCE_LEE) {
+            this.mainCharacter = CharacterDecorator.getInstance(new CharacterBruceLee());
+        } else if (character == CHARACTER_DINOSAUR) {
+            this.mainCharacter = CharacterDecorator.getInstance(new CharacterDinosaur());
+        } else if (character == CHARACTER_MARIO) {
+            this.mainCharacter = CharacterDecorator.getInstance(new CharacterMario());
         }
-
 
         this.clouds = new Clouds(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
         this.land = new Land(GameWindow.SCREEN_WIDTH, (CharacterDecorator) mainCharacter);
-        this.enemyManager= new EnemiesManager((CharacterDecorator) this.mainCharacter);
-        this.powerUpManager= new PowerUpsManager((CharacterDecorator) this.mainCharacter);
+        this.enemyManager = new EnemiesManager((CharacterDecorator) this.mainCharacter);
+        this.powerUpManager = new PowerUpsManager((CharacterDecorator) this.mainCharacter);
         this.objects.add(clouds);
         this.objects.add(land);
         this.objects.add(enemyManager);

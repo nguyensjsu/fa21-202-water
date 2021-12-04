@@ -9,13 +9,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import util.Animation;
-import util.Resource;
 
 public class CharacterDecorator extends Character implements IObject, ICharacter {
 
     Character wrapped;
 
-    public static final int LAND_POSY =280;
+    public static final int LAND_POSY = 280;
     public static final float GRAVITY = 0.4f;
 
     private static final int NORMAL_RUN = 0;
@@ -43,37 +42,46 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
     private AudioClip deadSound;
     private AudioClip scoreUpSound;
 
-    public CharacterDecorator(Character wrapped) {
+    private CharacterDecorator(Character wrapped) {
         this.wrapped = wrapped;
         posX = 50;
         posY = LAND_POSY;
         rectBound = new Rectangle();
 
-//        normalRunAnim = new Animation(90);
-//        normalRunAnim.addFrame(Resource.getResouceImage("data/bl1.jpeg"));
-//        normalRunAnim.addFrame(Resource.getResouceImage("data/bl2.jpeg"));
+        // normalRunAnim = new Animation(90);
+        // normalRunAnim.addFrame(Resource.getResouceImage("data/bl1.jpeg"));
+        // normalRunAnim.addFrame(Resource.getResouceImage("data/bl2.jpeg"));
 
         normalRunAnim = wrapped.getNormalRunAnimation();
 
-//        jumping = Resource.getResouceImage("data/bl3.jpeg");
-        jumping  = wrapped.getJumpingImage();
+        // jumping = Resource.getResouceImage("data/bl3.jpeg");
+        jumping = wrapped.getJumpingImage();
 
-//        downRunAnim = new Animation(90);
-//        downRunAnim.addFrame(Resource.getResouceImage("data/main-character5.png"));
-//        downRunAnim.addFrame(Resource.getResouceImage("data/main-character6.png"));
+        // downRunAnim = new Animation(90);
+        // downRunAnim.addFrame(Resource.getResouceImage("data/main-character5.png"));
+        // downRunAnim.addFrame(Resource.getResouceImage("data/main-character6.png"));
 
         downRunAnim = wrapped.getDownRunAnimation();
 
-//        deathImage = Resource.getResouceImage("data/main-character4.png");
+        // deathImage = Resource.getResouceImage("data/main-character4.png");
         deathImage = wrapped.getDeathImage();
 
         try {
-            jumpSound =  Applet.newAudioClip(new URL("file","","data/jump.wav"));
-            deadSound =  Applet.newAudioClip(new URL("file","","data/dead.wav"));
-            scoreUpSound =  Applet.newAudioClip(new URL("file","","data/scoreup.wav"));
+            jumpSound = Applet.newAudioClip(new URL("file", "", "data/jump.wav"));
+            deadSound = Applet.newAudioClip(new URL("file", "", "data/dead.wav"));
+            scoreUpSound = Applet.newAudioClip(new URL("file", "", "data/scoreup.wav"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+    }
+
+    static private CharacterDecorator instance;
+
+    public static CharacterDecorator getInstance() {
+        if (instance == null) {
+            instance = new CharacterDecorator();
+        }
+        return instance;
     }
 
     public float getSpeedX() {
@@ -85,7 +93,7 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
     }
 
     public void draw(Graphics g) {
-        switch(state) {
+        switch (state) {
             case NORMAL_RUN:
                 g.drawImage(normalRunAnim.getFrame(), (int) posX, (int) posY, null);
                 break;
@@ -99,17 +107,17 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
                 g.drawImage(deathImage, (int) posX, (int) posY, null);
                 break;
         }
-//		Rectangle bound = getBound();
-//		g.setColor(Color.RED);
-//		g.drawRect(bound.x, bound.y, bound.width, bound.height);
+        // Rectangle bound = getBound();
+        // g.setColor(Color.RED);
+        // g.drawRect(bound.x, bound.y, bound.width, bound.height);
     }
 
     public void update() {
         normalRunAnim.updateFrame();
         downRunAnim.updateFrame();
-        if(posY >= LAND_POSY) {
+        if (posY >= LAND_POSY) {
             posY = LAND_POSY;
-            if(state != DOWN_RUN) {
+            if (state != DOWN_RUN) {
                 state = NORMAL_RUN;
             }
         } else {
@@ -119,8 +127,8 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
     }
 
     public void jump() {
-        if(posY >= LAND_POSY) {
-            if(jumpSound != null) {
+        if (posY >= LAND_POSY) {
+            if (jumpSound != null) {
                 jumpSound.play();
             }
             speedY = -7.5f;
@@ -130,10 +138,10 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
     }
 
     public void down(boolean isDown) {
-        if(state == JUMPING) {
+        if (state == JUMPING) {
             return;
         }
-        if(isDown) {
+        if (isDown) {
             state = DOWN_RUN;
         } else {
             state = NORMAL_RUN;
@@ -142,7 +150,7 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
 
     public Rectangle getBound() {
         rectBound = new Rectangle();
-        if(state == DOWN_RUN) {
+        if (state == DOWN_RUN) {
             rectBound.x = (int) posX + 5;
             rectBound.y = (int) posY + 20;
             rectBound.width = downRunAnim.getFrame().getWidth() - 10;
@@ -157,7 +165,7 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
     }
 
     public void dead(boolean isDeath) {
-        if(isDeath) {
+        if (isDeath) {
             state = DEATH;
         } else {
             state = NORMAL_RUN;
@@ -174,25 +182,25 @@ public class CharacterDecorator extends Character implements IObject, ICharacter
 
     public void upScore() {
         score += 20;
-        if(score % 100 == 0) {
+        if (score % 100 == 0) {
             scoreUpSound.play();
         }
     }
-    public void resetScore(){
+
+    public void resetScore() {
         score = 0;
     }
 
-    public void resetHealth(){
+    public void resetHealth() {
         health = 100;
     }
 
-    public void DecreaseHealth(){
+    public void DecreaseHealth() {
         health -= 1;
     }
 
-    public void IncreaseHealth(){
+    public void IncreaseHealth() {
         health += 1;
     }
-
 
 }
