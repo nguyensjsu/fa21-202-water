@@ -33,8 +33,12 @@ We tracked issues in project dashboard as:
 
 
 ### [Burndown Chart](Insert Url)
-Insert Image
 
+* Task Sheet
+![Task Sheet](./images/TaskSheet.png)
+
+* Burndown Chart
+![Burndown Chart](./images/BurndownTeamWater.png) 
 
 ### Individual Contributions
 * Anujot - State Pattern, User Interface, Graphic Images Creation, Documentation, Demo Video, Agile Video
