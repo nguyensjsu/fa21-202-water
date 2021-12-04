@@ -8,7 +8,7 @@ Water
 * [Adarsh Patil](https://github.com/adpatil036)
 * [Anujot Singh](https://github.com/tojuna)
 * [Rohit K Philip](https://github.com/rohitkphilip)
-* [Yash Modi](https://github.com/yashm28)
+* [Yash Modi](https://github.com/yashm28sjsu)
 
 ## How to run the game
 * Install AWT, Swing
@@ -32,7 +32,7 @@ We tracked issues in project dashboard as:
 <img width="1137" alt="Screen Shot 2021-12-03 at 3 01 03 AM" src="https://user-images.githubusercontent.com/67829172/144592013-4862f052-5666-4fe9-90e0-0a7731eaba73.png">
 
 
-### [Burndown Chart](Insert Url)
+### [Burndown Chart](https://docs.google.com/spreadsheets/d/1SoNHd6VdUsYvqtHj7YMbvN_78-oVNKeAV7NsBcfKB68/edit?usp=sharing)
 
 * Task Sheet
 ![Task Sheet](./images/TaskSheet.png)
