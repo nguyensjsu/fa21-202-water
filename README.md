@@ -1,6 +1,7 @@
 # Chrome Dino </br>
 ### [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
 ### [Recorded Demo](https://youtu.be/dPIWv86ULjM)
+### [Scrum Meeting](Link coming soon)
 
 ## Team Name
 Water
