@@ -1,4 +1,4 @@
-# Chrome Dino [Watch Trailer](InsertUrl)
+# Chrome Dino [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
 
 ## Team Name
 Water
