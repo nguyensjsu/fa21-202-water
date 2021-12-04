@@ -27,4 +27,33 @@ public class DinoObjectFactory implements IObjectFactory {
         this.objects.add(powerUpManager);
     }
 
+    @Override
+    public IObject getClouds() {
+        return clouds;
+    }
+
+    @Override
+    public IObject getLand() {
+        return land;
+    }
+
+    @Override
+    public CharacterDecorator getCharacterDecorator() {
+        return (CharacterDecorator) mainCharacter;
+    }
+
+    @Override
+    public IEnemyManager getEnemyManager() {
+        return (IEnemyManager) enemyManager;
+    }
+
+    @Override
+    public PowerUpsManager getPowerUpManager() {
+        return (PowerUpsManager) powerUpManager;
+    }
+
+    @Override
+    public List<IObject> getObjects() {
+        return objects;
+    }
 }
