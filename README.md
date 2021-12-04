@@ -44,6 +44,8 @@ We tracked issues in project dashboard as:
 ![Burndown Chart](./images/BurndownTeamWater.png) 
 
 ### [Retrospective Dashboard](./images/retrospective-dashboard.png)
+<img width="744" alt="retrospective-dashboard" src="https://user-images.githubusercontent.com/67829172/144722877-7aa582fb-82e9-41f3-80b6-bceb1866f0be.png">
+
 
 ## Design Notes
 
