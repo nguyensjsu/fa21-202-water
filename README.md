@@ -120,5 +120,5 @@ We tracked issues in project dashboard as:
 ### Team Journals
 * [Anujot](https://docs.google.com/document/d/1OtRYFB6AZ2-ywfoYEYmuGZvEknHGLNkGpVMCrY4hjX8/edit)
 * [Adarsh](https://docs.google.com/document/d/1QaUme6EvhNVO5APSkX10locUypCL7Xs5x-AKutCLCR4/edit)
-* [Rohit](https://github.com/nguyensjsu/cmpe202-rohitkphilip/blob/main/journals/rohit-team-project-journal.md)
+* [Rohit](https://docs.google.com/document/d/1mwQLH9er2-xmaUzJfj2jfBJ75LUKVwBZ44Y267klyy8/edit?usp=sharing)
 * [Yash](https://docs.google.com/document/d/19b-PiPMiilFd61TAujqmiiGorWQeAdAyjc6aWBsXgiU/edit)
