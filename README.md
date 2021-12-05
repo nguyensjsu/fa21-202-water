@@ -85,7 +85,7 @@ We tracked issues in project dashboard as:
 
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="./images/singleton.png">
 
--   Singleton Pattern is used in settings screen.
+-   Singleton Pattern is used in settings screen to provide a way to access to the character of the game. To restrict the instantiation of a class to just one single instance so that there should not be mulitple characters in the game at a single time. It is also used to initiate the frame per second rate. This frames per second rate should not be instantiated muliple times in a game as there will be only one frames per second rate in the game. 
 
 ### Abstract Factory
 
