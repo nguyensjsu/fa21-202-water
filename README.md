@@ -31,6 +31,8 @@ Guide the Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacle
 ![mario-3](https://user-images.githubusercontent.com/67829172/144722625-d96079e7-0f9c-4136-b8a4-0e13dcde90f0.png)
 
 ## [UI Wireframes](./images/ui-wireframes.png)
+![ui-wireframes](https://user-images.githubusercontent.com/89710394/144737973-27ac56d4-84d5-46be-98c3-52e75898af55.png)
+
 
 ## Game Screenshots
 #### Main Menu
@@ -92,7 +94,7 @@ We tracked issues in project dashboard as:
 
 ![decorator_pattern_class_diagram](https://user-images.githubusercontent.com/89710394/144723089-d79de368-1278-4fcf-8d69-df2533dcc047.png)
 
--   Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.This pattern has been implemented for character selection. The CharacterDecorator class wraps around the classes CharacterBruceLee, CharacterDinosaur and Character Mario to provide functionalities like jump, draw etc for the main character while the classes for the characters contain the resources for the characters(images).
+-   Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.This pattern has been implemented for character selection. The CharacterDecorator class wraps around the classes CharacterBruceLee, CharacterDinosaur and CharacterMario to provide functionalities like jump, draw etc for the main character while the classes for the characters contain the resources for the characters(images).
 
 
 ### Singleton
