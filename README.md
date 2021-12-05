@@ -1,7 +1,8 @@
 # Chrome Dino </br>
 ### [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
 ### [Recorded Demo](https://youtu.be/dPIWv86ULjM)
-### [Scrum Meeting](Link coming soon)
+### [Scrum Meeting](https://drive.google.com/file/d/1OCEi2Q5DITIa36W-Lx6bhsV6-yoGj9fV/view?usp=sharing)
+Cutting and joining using Adobe Premiere. Sound cleaning using Adobe Audition. 
 ### [Link to our work video after scrums](https://drive.google.com/file/d/1Mfdq_JS-9BlWed0IoxLoIsUygwCDtalj/view?usp=sharing)
 
 ## Team Name
@@ -100,6 +101,6 @@ We tracked issues in project dashboard as:
 
 ### Team Journals
 * [Anujot](https://docs.google.com/document/d/1OtRYFB6AZ2-ywfoYEYmuGZvEknHGLNkGpVMCrY4hjX8/edit)
-* [Adarsh](https://docs.google.com/document/d/1QaUme6EvhNVO5APSkX10locUypCL7Xs5x-AKutCLCR4/edit?usp=sharing)
-* [Rohit](./journals/rohit-team-project-journal.md)
+* [Adarsh](https://docs.google.com/document/d/1QaUme6EvhNVO5APSkX10locUypCL7Xs5x-AKutCLCR4/edit)
+* [Rohit](https://github.com/nguyensjsu/cmpe202-rohitkphilip/blob/main/journals/rohit-team-project-journal.md)
 * [Yash](https://docs.google.com/document/d/19b-PiPMiilFd61TAujqmiiGorWQeAdAyjc6aWBsXgiU/edit)
