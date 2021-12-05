@@ -68,6 +68,20 @@ We tracked issues in project dashboard as:
 
 ## Design Notes
 
+### High Level Architecture
+
+-   User Interface Class Diagram
+
+![User Interface Class Diagram](images/UserInterface.png)
+
+-   Objects Class Diagram
+
+![Objects Class Diagram](images/Objects.png)
+
+-   Utilities Class Diagram
+
+![Util Class Diagram](images/UtilPackage.png)
+
 ### State Pattern
 
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="https://user-images.githubusercontent.com/67829172/144722594-e65b6252-16ed-4dc7-968d-be93d295b54b.png">
@@ -92,6 +106,8 @@ We tracked issues in project dashboard as:
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="./images/ClassDiagramAbstractFactory.jpg">
 
 -   Abstract Factory Pattern is used to fetch objects of same kind at runtime for different choices of character.
+-   For example, for Dinosaur the enemy should be cactus but for Mario the enemy should be Bullet.
+-   In this scenario, based on the selected character, we can fetch that corresponding factory to get all the related objects. In other words, when we get Dinosaur, we'll get all corresponding land, clouds, enemies, etc.
 
 ### Individual Contributions
 * Anujot - State Pattern, User Interface, Graphic Images Creation, Documentation, Demo Video, Agile Video
