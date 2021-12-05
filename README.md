@@ -86,7 +86,7 @@ We tracked issues in project dashboard as:
 
 <img width="1095" alt="Screen Shot 2021-12-04 at 11 40 19 AM" src="https://user-images.githubusercontent.com/67829172/144722594-e65b6252-16ed-4dc7-968d-be93d295b54b.png">
 
--   The state pattern is a behavioral design pattern. According to GoF definition, a state allows an object to alter its behavior when its internal state changes. The object will appear to change its class. State Pattern been used to transition between the different game playing states. The different states are: GamePlayingState, GameOverState, GameStartState and CharacterSelectionState
+-   The state pattern is a behavioral design pattern. According to GoF definition, a state allows an object to alter its behavior when its internal state changes. The object will appear to change its class. State Pattern has been used to transition between the different game playing states. The different states are: GamePlayingState, GameOverState, GameStartState and CharacterSelectionState
 
 ### [Decorator](./images/decorator_pattern_class_diagram.png)
 
