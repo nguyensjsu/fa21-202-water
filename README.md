@@ -2,7 +2,7 @@
 ### [Watch Trailer](https://www.youtube.com/watch?v=9khZpnRMiHk)
 ### [Recorded Demo](https://youtu.be/dPIWv86ULjM)
 ### [Scrum Meeting](https://drive.google.com/file/d/1OCEi2Q5DITIa36W-Lx6bhsV6-yoGj9fV/view?usp=sharing)
-Cutting and joining using Adobe Premiere. Sound cleaning using Adobe Audition. 
+Cutting and joining using Adobe Premiere. Sound cleaning using Adobe Audition.
 ### [Link to our work video after scrums](https://drive.google.com/file/d/1Mfdq_JS-9BlWed0IoxLoIsUygwCDtalj/view?usp=sharing)
 
 ## Team Name
@@ -92,7 +92,7 @@ We tracked issues in project dashboard as:
 
 ![decorator_pattern_class_diagram](https://user-images.githubusercontent.com/89710394/144723089-d79de368-1278-4fcf-8d69-df2533dcc047.png)
 
--   Decorator pattern has been implemented for character selection.
+-   Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.This pattern has been implemented for character selection. The CharacterDecorator class wraps around the classes CharacterBruceLee, CharacterDinosaur and Character Mario to provide functionalities like jump, draw etc for the main character while the classes for the characters contain the resources for the characters(images).
 
 
 ### Singleton
